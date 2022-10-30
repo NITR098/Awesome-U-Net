@@ -1,0 +1,47 @@
+run:
+  mode: 'train'
+  device: 'gpu'
+transforms: none
+dataset:
+  class_name: "SegPC2021Dataset"
+  input_size: 224
+  scale: 2.5
+  data_dir: "/path/to/datasets/segpc/np"
+  dataset_dir: "/path/to/datasets/segpc/TCIA_SegPC_dataset"
+  number_classes: 2
+data_loader:
+  train: 
+    batch_size: 16
+    shuffle: true
+    num_workers: 4
+    pin_memory: true
+  validation: 
+    batch_size: 16
+    shuffle: false
+    num_workers: 4
+    pin_memory: true
+  test:
+    batch_size: 16
+    shuffle: false
+    num_workers: 4
+    pin_memory: false
+training:
+  optimizer:
+    name: 'Adam'
+    params:
+      lr: 0.0001
+  criterion:
+    name: "DiceLoss"
+    params: {}
+  scheduler:
+    factor: 0.5
+    patience: 10
+  epochs: 100
+model:
+  save_dir: '../../saved_models/segpc2021_uctransnet'
+  load_weights: false
+  name: 'UCTransNet'
+  params:
+    n_channels: 4
+    n_classes: 2
+# preprocess:
