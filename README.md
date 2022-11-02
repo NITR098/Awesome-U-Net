@@ -53,13 +53,13 @@ Performance comparison on ***SegPC 2021*** dataset (best results are bolded).
 
 - **Results on ISIC 2018**
   
-  ![isic2018.png](/Users/afshin/Desktop/isic2018.png)
+  ![isic2018.png](./_imgs/isic2018.png)
   
   Visual comparisons of different methods on the *ISIC 2018* skin lesion segmentation dataset. Ground truth boundaries are shown in <span style="color: #0F0">green</span>, and predicted boundaries are shown in <span style="color:blue">blue</span>.
 
 - **Result on SegPC 2021**
   
-  ![segpc.png](/Users/afshin/Desktop/segpc.png)
+  ![segpc.png](./_imgs/segpc.png)
   
   Visual comparisons of different methods on the *SegPC 2021* cell segmentation dataset. <span style="color:red">Red</span> region indicates the Cytoplasm and <span style="color:blue">blue</span> denotes the Nucleus area of cell.
 
