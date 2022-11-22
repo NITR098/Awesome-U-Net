@@ -4,6 +4,10 @@
 
 Official repo for [Medical Image Segmentation Review: The success of U-Net]()
 
+<p align="center">
+<img src=./images/U-Net_Taxonomy.png />
+</p>
+
 ### Announcements
 :fire::fire: will be updated soon ...
 #### Citation
