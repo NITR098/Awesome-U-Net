@@ -108,7 +108,7 @@ Performance comparison on ***Synapse*** dataset (best results are bolded).
   
   Visual comparisons of different methods on the *SegPC 2021* cell segmentation dataset. <span style="color:red">Red</span> region indicates the Cytoplasm and <span style="color:blue">blue</span> denotes the Nucleus area of cell.
 
-**Result on Synapse**
+- **Result on Synapse**
   
   ![synapse.png](./_imgs/synapse.png)
   
