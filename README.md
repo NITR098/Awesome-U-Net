@@ -14,7 +14,7 @@ Official repo for [Medical Image Segmentation Review: The success of U-Net](http
 November 27, 2022: arXiv release version.
 #### Citation
 ```
-@article{azad2022diffusion,
+@article{azad2022medical,
   title = {Medical Image Segmentation Review: The success of U-Net},
   author = {Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and   Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
   journal={arXiv preprint arXiv:2211.14830},
