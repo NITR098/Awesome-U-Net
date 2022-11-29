@@ -10,9 +10,15 @@ Official repo for [Medical Image Segmentation Review: The success of U-Net]()
 
 ### Announcements
 :fire::fire: will be updated soon ...
+November 27, 2022: arXiv release version.
 #### Citation
-```latex
-
+```
+@article{azad2022diffusion,
+  title = {Medical Image Segmentation Review: The success of U-Net},
+  author = {Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and   Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
+  journal={arXiv preprint arXiv:2211.14830},
+  year={2022}
+}
 ```
 
 ---
@@ -139,6 +145,6 @@ Performance comparison on ***Synapse*** dataset (best results are bolded).
 For any query please contact us for more information.
 ```
 rezazad68@gmail.com
-ehsan.xxxx@gmail.com
+engtekh@gmail.com
 afshinbigboy@gmail.com
 ```
