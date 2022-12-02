@@ -1,4 +1,5 @@
 # Awesome U-Net
+
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/hee9joon/Awesome-Diffusion-Models) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -9,49 +10,118 @@ Official repo for [Medical Image Segmentation Review: The success of U-Net](http
 </p>
 
 ### Announcements
+
 :fire::fire: will be updated soon ...
 
 November 27, 2022: arXiv release version.
+
 #### Citation
-```
+
+```latex
 @article{azad2022medical,
   title = {Medical Image Segmentation Review: The success of U-Net},
-  author = {Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and   Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
+  author = {Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
   journal={arXiv preprint arXiv:2211.14830},
   year={2022}
 }
 ```
 
 ---
+
 ### Abstract
+
 Automatic medical image segmentation is a crucial topic in the medical domain and successively a critical counterpart in the computer-aided diagnosis paradigm. U-Net is the most widespread image segmentation architecture due to its flexibility, optimized modular design, and success in all medical image modalities. Over the years, the U-Net model achieved tremendous attention from academic and industrial researchers. Several extensions of this network have been proposed to address the scale and complexity created by medical tasks. Addressing the deficiency of the naive U-Net model is the foremost step for vendors to utilize the proper U-Net variant model for their business. Having a compendium of different variants in one place makes it easier for builders to identify the relevant research. Also, for ML researchers it will help them understand the challenges of the biological tasks that challenge the model. To address this, we discuss the practical aspects of the U-Net model and suggest a taxonomy to categorize each network variant. Moreover, to measure the performance of these strategies in a clinical application, we propose fair evaluations of some unique and famous designs on well-known datasets. We provide a comprehensive implementation library with trained models for future research. In addition, for ease of future studies, we created an online list of U-Net papers with their possible official implementation.
 
 <p align="center">
 <img src=./images/unet-pipeline.png />
 </p>
 
-
 ---
-## How to use codes (Train and Test)
-...
+
+
+
+### The structure of codes
+
+Here is
+
+```bash
+.
+├── README.md
+├── images
+│   └── *.png
+├── configs
+│   ├── isic
+│   │   ├── isic2018_*<net_name>.yaml
+│   └── segpc
+│       └── segpc2021_*<net_name>.yaml
+├── datasets
+│   ├── *<dataset_name>.py
+│   ├── *<dataset_name>.ipynb
+│   └── prepare_*<dataset_name>.ipynb
+├── models
+│   ├── *<net_name>.py
+│   └── _*<net_name>
+│       └── *.py
+├── train_and_test
+│   ├── isic
+│   │   ├── *<net_name>-isic.ipynb
+│   │   └── *<net_name>-isic.py
+│   └── segpc
+│       ├── *<net_name>-segpc.ipynb
+│       └── *<net_name>-segpc.py
+├── losses.py
+└── utils.py
+```
+
+
+
+## Dataset prepration
+
+Please go to ["./datasets/README.md"](https://github.com/NITR098/Awesome-U-Net/blob/main/datasets/README.md) for details. We used 3 datasets for this work. After preparing required data you need to put the required data path in relevant config files.
+
+
+
+## Train and Test
+
+In the `train_and_test` folder, there are folders with the names of different datasets. In each of these subfolders, there are files related to each model network in two different formats (`.py` and ‍`.ipynb`). In notebook files you will face with the following procedures. This file contains both the testing and traning steps.
+
+- Prepration step
+  - Import packages & functions
+  - Set the seed
+  - Load the config file
+- Dataset and Dataloader
+  - Prepare Metrics
+- Define test and validate function
+- Load and prepare model
+- Traning
+  - Save the best model
+- Test the best inferred model
+  - Load the best model
+- Evaluation
+  - Plot graphs and print results
+- Save images
+
 
 
 ### Pretrained model weights
 
 Here you can download pre-trained weights for networks.
 
-| Network            | SegPC 2021 | ISIC 2018 | *Description*                           |
-| ------------------ | ---------- | --------- | --------------------------------------- |
-| **U-Net**          |            |           | Without batch normalization; 100 Epochs |
-| **Att-UNet**       |            |           |                                         |
-| **U-Net++**        |            |           |                                         |
-| **MultiResUNet**   |            |           |                                         |
-| **Residual U-Net** |            |           |                                         |
-| **TransUNet**      |            |           |                                         |
-| **UCTransNet**     |            |           |                                         |
-| **MISSFormer**     |            |           |                                         |
+| Network            | Model Weight                               | Train and Test File                        |
+| ------------------ | ------------------------------------------ | ------------------------------------------ |
+| **U-Net**          | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **Att-UNet**       | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **U-Net++**        | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **MultiResUNet**   | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **Residual U-Net** | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **TransUNet**      | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **UCTransNet**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+| **MISSFormer**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
+
+
 
 ## Results
+
 For evaluating the performance of some mentioned methods, three challenging tasks in medical image segmentaion has been considered. In bellow, results of them illustrated.
 
 <br>
@@ -98,30 +168,25 @@ Performance comparison on ***Synapse*** dataset (best results are bolded).
 | **UCTransNet**     | 78.23     | 26.75     | 84.25     | 64.65       | 82.35     | 77.65     | 94.36     | 58.18     | 84.74     | 79.66     |
 | **MISSFormer**     | **81.96** | **18.20** | 86.99     | 68.65       | **85.21** | **82.00** | **94.41** | **65.67** | **91.92** | **80.81** |
 
-
-
-
-
 ### Visualization
 
 - **Results on ISIC 2018**
   
-  ![isic2018.png](./_imgs/isic2018.png)
+  ![isic2018.png](./images/isic2018.png)
   
   Visual comparisons of different methods on the *ISIC 2018* skin lesion segmentation dataset. Ground truth boundaries are shown in <span style="color: #0F0">green</span>, and predicted boundaries are shown in <span style="color:blue">blue</span>.
 
 - **Result on SegPC 2021**
   
-  ![segpc.png](./_imgs/segpc.png)
+  ![segpc.png](./images/segpc.png)
   
   Visual comparisons of different methods on the *SegPC 2021* cell segmentation dataset. <span style="color:red">Red</span> region indicates the Cytoplasm and <span style="color:blue">blue</span> denotes the Nucleus area of cell.
 
 - **Result on Synapse**
   
-  ![synapse.png](./_imgs/synapse.png)
+  ![synapse.png](./images/synapse.png)
   
   Visual comparisons of different methods on the *Synapse* multi-organ segmentation dataset.
-
 
 ## References
 
@@ -141,9 +206,10 @@ Performance comparison on ***Synapse*** dataset (best results are bolded).
 
 - MISSFormer: https://github.com/ZhifangDeng/MISSFormer
 
-
 ### Query
+
 For any query please contact us for more information.
+
 ```
 rezazad68@gmail.com
 engtekh@gmail.com
