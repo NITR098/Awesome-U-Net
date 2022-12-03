@@ -109,15 +109,14 @@ Here you can download pre-trained weights for networks.
 
 | Network            | Model Weight                               | Train and Test File                        |
 | ------------------ | ------------------------------------------ | ------------------------------------------ |
-| **U-Net**          | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **Att-UNet**       | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **U-Net++**        | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **MultiResUNet**   | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **Residual U-Net** | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **TransUNet**      | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **UCTransNet**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-| **MISSFormer**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018]() - [SegPC2021]() - [Synapse]() |
-
+| **U-Net**          | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/unet-isic.ipynb)         - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/unet-segpc.ipynb)         - [Synapse]() |
+| **Att-UNet**       | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/attunet-isic.ipynb)      - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/attunet-segpc.ipynb)      - [Synapse]() |
+| **U-Net++**        | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/unetpp-isic.ipynb)       - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/unetpp-segpc.ipynb)       - [Synapse]() |
+| **MultiResUNet**   | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/multiresunet-isic.ipynb) - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/multiresunet-segpc.ipynb) - [Synapse]() |
+| **Residual U-Net** | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/resunet-isic.ipynb)      - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/resunet-segpc.ipynb)      - [Synapse]() |
+| **TransUNet**      | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/transunet-isic.ipynb)    - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/transunet-segpc.ipynb)    - [Synapse]() |
+| **UCTransNet**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/uctransnet-isic.ipynb)   - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/uctransnet-segpc.ipynb)   - [Synapse]() |
+| **MISSFormer**     | [ISIC2018]() - [SegPC2021]() - [Synapse]() | [ISIC2018](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/isic/missformer-isic.ipynb)   - [SegPC2021](https://github.com/NITR098/Awesome-U-Net/blob/main/train_and_test/segpc/missformer-segpc.ipynb)   - [Synapse]() |
 
 
 ## Results
