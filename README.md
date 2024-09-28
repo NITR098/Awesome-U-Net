@@ -11,7 +11,7 @@ Official repo for [Medical Image Segmentation Review: The success of U-Net](http
 
 ### Announcements
 
-:fire::fire: will be updated soon ...
+August 21, 2024: The final draft is published at the [IEEE TPAMI](https://ieeexplore.ieee.org/abstract/document/10643318) :fire::fire:
 
 November 27, 2022: arXiv release version.
 
@@ -19,10 +19,13 @@ November 27, 2022: arXiv release version.
 
 ```latex
 @article{azad2022medical,
-  title = {Medical Image Segmentation Review: The success of U-Net},
-  author = {Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
-  journal={arXiv preprint arXiv:2211.14830},
-  year={2022}
+  author={Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Medical Image Segmentation Review: The Success of U-Net}, 
+  year={2024},
+  pages={1-20},
+  keywords={Image segmentation;Biomedical imaging;Taxonomy;Computer architecture;Feature extraction;Transformers;Task analysis;Medical Image Segmentation;Deep Learning;U-Net;Convolutional Neural Network;Transformer},
+  doi={10.1109/TPAMI.2024.3435571}
 }
 ```
 
@@ -207,7 +210,7 @@ Performance comparison on ***Synapse*** dataset (best results are bolded).
 
 ### Query
 
-For any query please contact us for more information.
+For any query, please contact us.
 
 ```
 rezazad68@gmail.com
