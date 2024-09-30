@@ -18,7 +18,7 @@ November 27, 2022: arXiv release version.
 #### Citation
 
 ```latex
-@article{azad2022medical,
+@article{azad2024medical,
   author={Azad, Reza and Aghdam, Ehsan Khodapanah and Rauland, Amelie and Jia, Yiwei and Avval, Atlas Haddadi and Bozorgpour, Afshin and Karimijafarbigloo, Sanaz and Cohen, Joseph Paul and Adeli, Ehsan and Merhof, Dorit},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={Medical Image Segmentation Review: The Success of U-Net}, 
